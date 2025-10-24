@@ -1,8 +1,8 @@
 // App.js
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import Timer from './components/Timer';
-import Header from './components/Header';
+import Timer from './Components/Timer';
+import Header from './Components/Header';
 // import Settings from './components/Settings'; // Akan ditambahkan nanti
 // import TaskList from './components/TaskList'; // Akan ditambahkan nanti
 
