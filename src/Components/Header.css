@@ -1,0 +1,12 @@
+/* components/Header.css */
+.header {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.header-title {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+}

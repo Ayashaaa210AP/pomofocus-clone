@@ -1,0 +1,11 @@
+/* components/Timer.css */
+.timer {
+  margin: 30px 0;
+}
+
+.time-display {
+  font-size: 8em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
