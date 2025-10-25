@@ -4,7 +4,7 @@ import './App.css';
 import Timer from './Components/Timer';
 import Header from './Components/Header';
 // import Settings from './components/Settings'; // Akan ditambahkan nanti
-// import TaskList from './components/TaskList'; // Akan ditambahkan nanti
+import TaskList from './Components/Tasklist'; // Akan ditambahkan nanti
 
 function App() {
   const [pomodoroDuration, setPomodoroDuration] = useState(25 * 60); // 25 menit
