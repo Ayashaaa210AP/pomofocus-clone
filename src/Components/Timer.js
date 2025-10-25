@@ -1,4 +1,3 @@
-// components/Timer.js
 import React from 'react';
 import './Timer.css';
 

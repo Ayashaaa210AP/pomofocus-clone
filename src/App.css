@@ -1,4 +1,5 @@
 /* App.css */
+
 .App {
   text-align: center;
   color: #fff;
@@ -8,16 +9,17 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  /* Warna latar belakang akan diatur oleh inline style di App.js */
 }
 
 .timer-container {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Transparan putih */
   border-radius: 10px;
   padding: 30px;
-  margin-top: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  width: 90%;
+  width: 100%;
   max-width: 500px;
+  text-align: center;
 }
 
 .mode-switcher {
@@ -27,7 +29,7 @@
   gap: 10px;
 }
 
-.mode-switcher button {
+.mode-button {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 5px;
@@ -38,17 +40,40 @@
   transition: background-color 0.2s ease;
 }
 
-.mode-switcher button:hover {
+.mode-button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.mode-switcher button.active {
-  background: #000;
+.mode-button.active {
+  background: #000; /* Default hitam */
+  color: white;
+}
+
+.mode-button.active.pomodoro {
+  background: #DA4F41;
+  color: white;
+}
+
+.mode-button.active.shortBreak {
+  background: #2A9D8F;
+  color: white;
+}
+
+.mode-button.active.longBreak {
+  background: #264653;
+  color: white;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .timer-controls button {
   background: #fff;
-  color: #DA4F41; /* Sesuaikan dengan warna latar belakang */
+  color: #DA4F41;
   border: none;
   border-radius: 5px;
   padding: 15px 40px;
@@ -68,4 +93,68 @@
 .timer-controls button:active {
   transform: translateY(0);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Notifikasi */
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.notification-box h3 {
+  margin-top: 0;
+  color: #DA4F41;
+}
+
+.notification-box p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.notification-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.notification-actions button {
+  background: #DA4F41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.notification-actions button:hover {
+  background: #c84438;
+}
+
+.notification-actions button:nth-child(2) {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.notification-actions button:nth-child(2):hover {
+  background: #e0e0e0;
 }
